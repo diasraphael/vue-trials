@@ -1,0 +1,22 @@
+{
+  "name": "vue-trials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diasraphael/vue-trials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diasraphael/vue-trials/issues"
+  },
+  "homepage": "https://github.com/diasraphael/vue-trials#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.1.0"
+  }
+}
