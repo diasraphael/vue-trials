@@ -10,8 +10,25 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{product}}</h1>
+      <h1>{{title}}</h1>
       <p>{{description}}</p>
+      <h2>Cart: {{cart}}</h2>
+      <a :href="url">vue mastery</a>
+      <img :src="variant ? greenSocks : blueSocks" alt="socks" />
+      <p v-if="onSale">In stock</p>
+      <p v-else>Out of stock</p>
+      <ul>
+        <li v-for="size in sizes">{{size}}</li>
+      </ul>
+      <div
+        v-for="color in colors"
+        :key="color.id"
+        @mouseover="changeColor(color)"
+      >
+        {{color.color}}
+      </div>
+      <button v-on:click="increment" :disabled="!onSale">Increment</button>
+      <button @click="decrement">Decrement</button>
     </div>
     <script src="./main.js"></script>
     <script>
